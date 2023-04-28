@@ -86,14 +86,14 @@
                         //when Quiz Question Complete Display Result Section
                         quiz.style.display = "none";
                         if (correct >= 1 && correct <= 2) {
-                            points.innerHTML = `You are a high level fishing man ${correct}`;
-                            points.style.color = "red";
+                            points.innerHTML = "Great,it seems like you have little experience in fishing. We recommend you to fish in areas meant for novices, blue in colour on the map.";
+                            points.style.color = "blue";
                           } else if (correct >= 3 && correct <= 6) {
-                            points.innerHTML = `You are a low level fishing man ${correct}`;
-                            points.style.color = "orange";
+                            points.innerHTML = `Great,it seems like you have some experience in fishing. We recommend you to fish in areas meant for intermediates, pink in colour on the map.`;
+                            points.style.color = "pink";
                           } else {
-                            points.innerHTML = `You are a high level fishing man ${correct}`;
-                            points.style.color = "green";
+                            points.innerHTML = `Amazing, it seems like you have accumulated a great amount of experience in fishing. We recommend you to fish in areas meant for experts, red in colour on the map.`;
+                            points.style.color = "red";
                           }
                         result.style.display = "block";
                     }
